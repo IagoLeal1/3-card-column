@@ -1,0 +1,64 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #F2F2F2;
+  place-items: center;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 500px;
+  width: 920px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  background-color: #E28525;
+  gap: 3rem;
+  color: #FFF;
+  padding: 3.5rem;
+}
+
+.card img{
+  height: 40px;
+  width: 60px;
+}
+.card h1{
+  font-family: 'Big Shoulders Display'
+}
+.card span{
+  font-family: 'Lexend Deca'
+}
+.card button{
+  background-color: #fff;
+  color: #D0A26D;
+  height: 36px;
+  width: 136px;
+  border-radius: 40px;
+  border: none;
+}
+.card:nth-child(1){
+  border-radius: 10px 0 0 10px;
+}
+.card:nth-child(2){
+  background-color: #016972;
+}
+.card:nth-child(2) button{
+  color: #6DA5A4;
+}
+.card:nth-child(3){
+  background-color: #00403F;
+  border-radius: 0 10px 10px 0;
+}
+.card:nth-child(3) button{
+  color: #2E4D4B;
+}
