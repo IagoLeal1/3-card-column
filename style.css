@@ -19,6 +19,13 @@ body{
   height: 500px;
   width: 920px;
 }
+@media (max-width: 425px){
+  .container{
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 2rem;
+  }
+}
 .card{
   display: flex;
   flex-direction: column;
